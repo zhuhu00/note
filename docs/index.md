@@ -1,17 +1,8 @@
-# Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Index
 
-## Commands
+[Hu](https://zhuhu00.top/)'s notebook.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Recent Updates
+- [games101.md](computer graphics/games101/) <div style="text-align: right">2024-02-22 23:00:43.545798</div>
+- [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-22 22:24:22.887787</div>
