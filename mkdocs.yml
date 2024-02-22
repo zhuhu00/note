@@ -1,13 +1,19 @@
-site_name: Hu's notebook # web page name
+site_name: Hu's notebook
 theme:
+  logo: _assets/icon.png
+  favicon: _assets/icon.png
   name: material
   palette:
-    primary: grey
-    accent: amber
+    primary: brown
+    accent: lime
   features:
-    - navigation.instant
+    - navigation.instant  
     - navigation.tracking
-    - navigation.top # back-to-top button
+    - navigation.top
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - search.share
 repo_url: https://github.com/zhuhu00/note
 plugins:
   - search
