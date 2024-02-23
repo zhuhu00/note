@@ -1,7 +1,7 @@
 site_name: Hu's notebook
 theme:
-  logo: 📚
-  favicon: 📚
+  logo: _assets/icon.png
+  favicon: _assets/icon.png
   name: material
   palette:
     primary: cyan
