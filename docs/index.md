@@ -4,11 +4,11 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-23 12:16:10.748343</div>
 - [python调试-vim等.md](computer graphics/games102/python调试-vim等/) <div style="text-align: right">2024-02-23 12:08:04.507952</div>
 - [Diffusion_tutorial.md](Diffusion_tutorial/) <div style="text-align: right">2024-02-23 12:08:04.506580</div>
 - [Gaussian.md](Gaussian/) <div style="text-align: right">2024-02-23 12:08:04.505430</div>
 - [docker-cuda.md](docker/docker-cuda/) <div style="text-align: right">2024-02-23 11:53:03.496145</div>
-- [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-23 11:33:38.799654</div>
 - [games101.md](computer graphics/games101/) <div style="text-align: right">2024-02-23 11:33:09.974303</div>
 - [Huggingface.md](Huggingface/) <div style="text-align: right">2023-12-18 13:06:45.594436</div>
 - [代码调试.md](代码调试/) <div style="text-align: right">2023-12-13 19:36:06.630035</div>
