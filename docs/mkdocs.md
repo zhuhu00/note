@@ -161,7 +161,7 @@ Using git action to deploy to github pages:
 
 Create the file at`.github/workflows/ci.yml`:
 
-```yml
+```yaml
 name: ci 
 on:
   push:
