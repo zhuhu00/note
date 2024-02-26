@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-23 12:16:10.748343</div>
+- [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-26 19:08:56.157304</div>
 - [python调试-vim等.md](computer graphics/games102/python调试-vim等/) <div style="text-align: right">2024-02-23 12:08:04.507952</div>
 - [Diffusion_tutorial.md](Diffusion_tutorial/) <div style="text-align: right">2024-02-23 12:08:04.506580</div>
 - [Gaussian.md](Gaussian/) <div style="text-align: right">2024-02-23 12:08:04.505430</div>
