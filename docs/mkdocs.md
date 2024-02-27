@@ -181,7 +181,7 @@ jobs:
       # - run: python update_recent.py
       - run: mkdocs gh-deploy --force
 ```
-
+使用 page 在 branch 上进行deploy
 ## Miscellaneous
 
 - 改变域名, 可以参考 github.io 的域名
