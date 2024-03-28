@@ -5,7 +5,7 @@
 
 ## Recent Updates
 - [PyCubes.md](python/PyCubes/) <div style="text-align: right">2024-03-28 14:26:09.587557</div>
-- [Lecture1.md](InternLM2_note/Lecture1/) <div style="text-align: right">2024-03-28 14:26:09.584339</div>
+- [Lecture1.md](InternLM2 note/Lecture1/) <div style="text-align: right">2024-03-28 14:26:09.584339</div>
 - [docker-cuda.md](docker/docker-cuda/) <div style="text-align: right">2024-03-08 11:02:07.680396</div>
 - [Huggingface.md](Huggingface/) <div style="text-align: right">2024-02-27 16:51:20.601456</div>
 - [mkdocs.md](mkdocs/) <div style="text-align: right">2024-02-27 10:57:41.678862</div>
