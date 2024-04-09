@@ -4,10 +4,10 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [Lecture2.md](InternLM2-note/Lecture2/) <span style="float: right;">2024-04-09 15:46</span>
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
 - [Scene-generation.md](Scene-generation/) <span style="float: right;">2024-04-09 15:21</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 10:09</span>
-- [Lecture2.md](InternLM2-note/Lecture2/) <span style="float: right;">2024-04-04 13:57</span>
 - [Diffusion_tutorial.md](Diffusion_tutorial/) <span style="float: right;">2024-04-03 10:59</span>
 - [Lecture1.md](InternLM2-note/Lecture1/) <span style="float: right;">2024-03-31 13:46</span>
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-03-28 14:26</span>
