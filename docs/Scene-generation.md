@@ -47,4 +47,3 @@ rendering on several established datasets.
 
 # 2023
 
-
