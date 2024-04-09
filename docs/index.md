@@ -4,7 +4,8 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-09 15:52</span>
+- [Lecture0.md](InternLM2-note/Lecture0/) <span style="float: right;">2024-04-09 15:55</span>
+- [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-09 15:54</span>
 - [Lecture1.md](InternLM2-note/Lecture1/) <span style="float: right;">2024-04-09 15:52</span>
 - [Lecture2.md](InternLM2-note/Lecture2/) <span style="float: right;">2024-04-09 15:52</span>
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
