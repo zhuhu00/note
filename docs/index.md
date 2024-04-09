@@ -4,7 +4,9 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Lecture2.md](InternLM2-note/Lecture2/) <div style="text-align: right">2024-04-04 13:38:05.495840</div>
+- [Scene-generation.md](Scene-generation/) <div style="text-align: right">2024-04-09 10:34:23.292527</div>
+- [Speaking.md](English/Speaking/) <div style="text-align: right">2024-04-09 10:09:41.971843</div>
+- [Lecture2.md](InternLM2-note/Lecture2/) <div style="text-align: right">2024-04-04 13:57:45.165405</div>
 - [Diffusion_tutorial.md](Diffusion_tutorial/) <div style="text-align: right">2024-04-03 10:59:14.567768</div>
 - [Lecture1.md](InternLM2-note/Lecture1/) <div style="text-align: right">2024-03-31 13:46:53.982573</div>
 - [PyCubes.md](python/PyCubes/) <div style="text-align: right">2024-03-28 14:26:09.587557</div>
