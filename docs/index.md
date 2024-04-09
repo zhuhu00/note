@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Scene-generation.md](Scene-generation/) <div style="text-align: right">2024-04-09 10:40:02.534107</div>
+- [Scene-generation.md](Scene-generation/) <div style="text-align: right">2024-04-09 12:03:50.156673</div>
 - [Speaking.md](English/Speaking/) <div style="text-align: right">2024-04-09 10:09:41.971843</div>
 - [Lecture2.md](InternLM2-note/Lecture2/) <div style="text-align: right">2024-04-04 13:57:45.165405</div>
 - [Diffusion_tutorial.md](Diffusion_tutorial/) <div style="text-align: right">2024-04-03 10:59:14.567768</div>
