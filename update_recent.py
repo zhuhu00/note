@@ -25,5 +25,6 @@ with open(INDEX_FILE, 'w') as handle:
     for file in files:
         name = os.path.basename(file)
         modified = os.path.getmtime(file)
+        edit_time = datetime.datetime.fromtimestamp(modified).strftime('%Y-%m-%d %H:%M')
         
-        handle.write(f'- [{name}]({os.path.relpath(file, "docs").replace(".md", "/")}) <span style="float: right;">{(datetime.datetime.fromtimestamp(modified)).strftime('%Y-%m-%d %H:%M')}</span>\n')
+        handle.write(f'- [{name}]({os.path.relpath(file, "docs").replace(".md", "/")}) <span style="float: right;">{edit_time}</span>\n')
