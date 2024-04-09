@@ -63,8 +63,8 @@ Debug第二原则，复现bug并观察运行细节：“复现bug有3个好处�
 
 ### Reference
 
-- 如何给算法和代码 debug: https://pengsida.notion.site/debug-1b69debf803a4c268fc8a09a9a748bbf
-- 调试九法: 软硬件错误排查之道: https://brainku.github.io/2016/12/11/debugging-the-9-rules/
+- 如何给算法和代码 debug: [https://pengsida.notion.site/debug-1b69debf803a4c268fc8a09a9a748bbf](https://pengsida.notion.site/debug-1b69debf803a4c268fc8a09a9a748bbf)
+- 调试九法: 软硬件错误排查之道: [https://brainku.github.io/2016/12/11/debugging-the-9-rules/](https://brainku.github.io/2016/12/11/debugging-the-9-rules/)
 
 ## 1. ipdb包
 ipdb有两种方式, 一种要侵入式, 修改源码, 改动太多很麻烦, 另一种是命令行模式. 
@@ -114,7 +114,7 @@ python -m ipdb xxx.py
 
 ### Reference
 
-- 官方文档: https://docs.python.org/3/library/pdb.html
+- 官方文档: [https://docs.python.org/3/library/pdb.html](https://docs.python.org/3/library/pdb.html)
 
 ## 2. vscode 自带的 debug
 
