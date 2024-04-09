@@ -1,4 +1,4 @@
-# 第二课笔记
+# Lecture 2 note & homework
 
 # 轻松分钟玩转书生·浦语大模型趣味 Demo
 

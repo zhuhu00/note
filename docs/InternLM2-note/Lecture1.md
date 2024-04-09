@@ -1,4 +1,4 @@
-# 第一课笔记
+# Lecture 1 note & homework
 
 ## 00-视频
 
