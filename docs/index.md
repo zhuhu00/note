@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [debug.md](python/debug/) <span style="float: right;">2024-04-09 22:53</span>
+- [debug.md](python/debug/) <span style="float: right;">2024-04-09 23:20</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 22:08</span>
 - [Lecture0.md](InternLM2-note/Lecture0/) <span style="float: right;">2024-04-09 19:29</span>
 - [Scene-generation.md](Scene-generation/) <span style="float: right;">2024-04-09 16:00</span>
