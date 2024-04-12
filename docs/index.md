@@ -5,7 +5,7 @@
 
 ## Recent Updates
 - [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-12 17:33</span>
-- [debug.md](python/debug/) <span style="float: right;">2024-04-12 12:27</span>
+- [debug.md](CS Missing/debug/) <span style="float: right;">2024-04-12 12:27</span>
 - [NeoVim的配置使用.md](CS Missing/NeoVim的配置使用/) <span style="float: right;">2024-04-10 22:41</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 22:08</span>
 - [Lecture0.md](InternLM2-note/Lecture0/) <span style="float: right;">2024-04-09 19:29</span>
