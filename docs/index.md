@@ -4,12 +4,12 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-12 17:33</span>
 - [debug.md](python/debug/) <span style="float: right;">2024-04-12 12:27</span>
 - [NeoVim的配置使用.md](CS Missing/NeoVim的配置使用/) <span style="float: right;">2024-04-10 22:41</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 22:08</span>
 - [Lecture0.md](InternLM2-note/Lecture0/) <span style="float: right;">2024-04-09 19:29</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-09 16:00</span>
-- [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-09 15:54</span>
 - [Lecture1.md](InternLM2-note/Lecture1/) <span style="float: right;">2024-04-09 15:52</span>
 - [Lecture2.md](InternLM2-note/Lecture2/) <span style="float: right;">2024-04-09 15:52</span>
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
