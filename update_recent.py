@@ -19,7 +19,7 @@ files = [f for f in files if f not in _exclude_list]
 files = sorted(files, key=lambda t: -os.stat(t).st_mtime) # descending modification time
 
 # write recent updated files to index.md
-files = files[:20]
+# files = files[:20]
 with open(INDEX_FILE, 'w') as handle:
     handle.write(INDEX_HEADER)
     for file in files:
