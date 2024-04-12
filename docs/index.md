@@ -4,6 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-04-12 17:55</span>
 - [Scene-generation-Survey.md](Generative Model/Scene-generation-Survey/) <span style="float: right;">2024-04-12 17:44</span>
 - [NeoVim的配置使用.md](CS Missing/NeoVim的配置使用/) <span style="float: right;">2024-04-12 17:36</span>
 - [Lecture3.md](InternLM2-note/Lecture3/) <span style="float: right;">2024-04-12 17:33</span>
@@ -17,7 +18,6 @@
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-03-28 14:26</span>
 - [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-03-08 11:02</span>
 - [Huggingface.md](CS Missing/Huggingface/) <span style="float: right;">2024-02-27 16:51</span>
-- [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-02-27 10:57</span>
 - [python调试-vim等.md](Computer Graphics/games102/python调试-vim等/) <span style="float: right;">2024-02-23 12:08</span>
 - [games101.md](Computer Graphics/games101/) <span style="float: right;">2024-02-23 11:33</span>
 - [L1 Overview.md](Computer Graphics/CMU-16-825-Learning for 3D Vision/L1 Overview/) <span style="float: right;">2023-04-11 16:30</span>
