@@ -31,6 +31,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true 
   - mdx_truly_sane_lists # fix typora 2 space indentation, ref: https://github.com/mkdocs/mkdocs/issues/545
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra_javascript:
   - _js/mathjax.js
