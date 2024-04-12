@@ -4,7 +4,8 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [debug.md](python/debug/) <span style="float: right;">2024-04-09 23:31</span>
+- [debug.md](python/debug/) <span style="float: right;">2024-04-12 12:25</span>
+- [NeoVim的配置使用.md](CS-Missing/NeoVim的配置使用/) <span style="float: right;">2024-04-10 22:41</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 22:08</span>
 - [Lecture0.md](InternLM2-note/Lecture0/) <span style="float: right;">2024-04-09 19:29</span>
 - [Scene-generation.md](Scene-generation/) <span style="float: right;">2024-04-09 16:00</span>
@@ -19,7 +20,6 @@
 - [mkdocs.md](mkdocs/) <span style="float: right;">2024-02-27 10:57</span>
 - [python调试-vim等.md](computer graphics/games102/python调试-vim等/) <span style="float: right;">2024-02-23 12:08</span>
 - [games101.md](computer graphics/games101/) <span style="float: right;">2024-02-23 11:33</span>
-- [NeoVim的配置使用.md](NeoVim的配置使用/) <span style="float: right;">2023-05-26 11:02</span>
 - [L1 Overview.md](computer graphics/CMU-16-825-Learning for 3D Vision/L1 Overview/) <span style="float: right;">2023-04-11 16:30</span>
 - [Course2.md](computer graphics/games201/Course2/) <span style="float: right;">2023-04-10 20:52</span>
 - [20230406-0413 NeRF Application.md](computer graphics/games102/20230406-0413 NeRF Application/) <span style="float: right;">2023-04-10 20:27</span>
