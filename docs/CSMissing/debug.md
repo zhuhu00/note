@@ -166,7 +166,7 @@ except Exception as e:
 
 ```json
 				{
-            "name": "sh_file_debug", # 随意
+            "name": "sh_file_debug", // 随意
             "type": "debugpy",
             "request": "attach",
             "connect": {
