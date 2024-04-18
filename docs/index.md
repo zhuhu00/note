@@ -4,6 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [docker-cuda.md](Docker/docker-cuda/) <span style="float: right;">2024-04-18 14:34</span>
 - [debug.md](CSMissing/debug/) <span style="float: right;">2024-04-15 20:09</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-15 10:43</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-04-12 17:57</span>
@@ -16,7 +17,6 @@
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
 - [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-03 10:59</span>
 - [PyCubes.md](Python/PyCubes/) <span style="float: right;">2024-03-28 14:26</span>
-- [docker-cuda.md](Docker/docker-cuda/) <span style="float: right;">2024-03-08 11:02</span>
 - [Huggingface.md](CSMissing/Huggingface/) <span style="float: right;">2024-02-27 16:51</span>
 - [games101.md](Graphics/games101/) <span style="float: right;">2024-02-23 11:33</span>
 - [L1 Overview.md](Graphics/CMU-16-825-Learning for 3D Vision/L1 Overview/) <span style="float: right;">2023-04-11 16:30</span>
