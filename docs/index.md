@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-04-19 17:33</span>
+- [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-04-19 17:42</span>
 - [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-19 17:33</span>
 - [Pytorch-Lightning.md](Python/Pytorch-Lightning/) <span style="float: right;">2024-04-19 17:25</span>
 - [Lecture4.md](InternLM2note/Lecture4/) <span style="float: right;">2024-04-18 14:46</span>
