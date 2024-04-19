@@ -28,3 +28,9 @@ sudo reboot
 正常检查 `torch`, cuda, 版本能否使用. 
 
 之后可以安装 cuda 什么的. 其实不装也可以. 
+
+
+## 参考
+
+- [为什么`nvidia-smi` 和 `nvcc -V` 的 `cuda` 版本不一样](https://www.zhihu.com/question/622711856/answer/3218272497)
+
