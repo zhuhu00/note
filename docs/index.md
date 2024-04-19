@@ -4,6 +4,10 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-04-19 17:33</span>
+- [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-19 17:33</span>
+- [Pytorch-Lightning.md](Python/Pytorch-Lightning/) <span style="float: right;">2024-04-19 17:25</span>
+- [Lecture4.md](InternLM2note/Lecture4/) <span style="float: right;">2024-04-18 14:46</span>
 - [docker-cuda.md](Docker/docker-cuda/) <span style="float: right;">2024-04-18 14:34</span>
 - [debug.md](CSMissing/debug/) <span style="float: right;">2024-04-15 20:09</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-15 10:43</span>
@@ -15,7 +19,6 @@
 - [Lecture1.md](InternLM2note/Lecture1/) <span style="float: right;">2024-04-09 15:52</span>
 - [Lecture2.md](InternLM2note/Lecture2/) <span style="float: right;">2024-04-09 15:52</span>
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
-- [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-03 10:59</span>
 - [PyCubes.md](Python/PyCubes/) <span style="float: right;">2024-03-28 14:26</span>
 - [Huggingface.md](CSMissing/Huggingface/) <span style="float: right;">2024-02-27 16:51</span>
 - [games101.md](Graphics/games101/) <span style="float: right;">2024-02-23 11:33</span>
