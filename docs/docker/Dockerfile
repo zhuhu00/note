@@ -1,7 +1,8 @@
 # EIAS
 # 与非 GPU 版本区别一：
 # 需要使用不同 cuda 版本，从 https://hub.docker.com/ 搜索对应版本，替换下面 FROM 的镜像
-FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
+# FROM nvidia/cuda:11.8.0-devel-ubuntu22.04 # A800 可用
+FROM registry.hub.com:5000/user-images/cuda11.8_lime123
 USER root
 
 # 设置编码
@@ -35,9 +36,9 @@ RUN rm -rf /var/lib/apt/lists/* \
 
 # 用 miniconda 安装 Python 3.10
 # 如果需要其他版本 python，从 https://mirrors.bfsu.edu.cn/anaconda/miniconda/ 替换下面的链接
-RUN wget --quiet -O ~/miniconda.sh https://mirrors.bfsu.edu.cn/anaconda/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh && \
-    /bin/bash ~/miniconda.sh -b -p /opt/conda && \
-    rm -f ~/miniconda.sh
+# RUN wget --quiet -O ~/miniconda.sh https://mirrors.bfsu.edu.cn/anaconda/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh && \
+#     /bin/bash ~/miniconda.sh -b -p /opt/conda && \
+#     rm -f ~/miniconda.sh
 
 # 将 conda/python 加入环境变量，以便能找到命令和依赖库
 ENV PATH=/opt/conda/bin:$PATH
