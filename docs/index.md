@@ -4,19 +4,23 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [Lecture6.md](InternLM2note/Lecture6/) <span style="float: right;">2024-04-25 21:10</span>
+- [Lecture5.md](InternLM2note/Lecture5/) <span style="float: right;">2024-04-25 21:07</span>
+- [Lecture4.md](InternLM2note/Lecture4/) <span style="float: right;">2024-04-25 18:14</span>
+- [tmux.md](CSMissing/tmux/) <span style="float: right;">2024-04-25 13:53</span>
+- [Lecture0.md](InternLM2note/Lecture0/) <span style="float: right;">2024-04-25 11:09</span>
+- [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-24 22:51</span>
+- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-24 20:25</span>
 - [Writing.md](English/Writing/) <span style="float: right;">2024-04-23 15:38</span>
 - [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-04-19 17:42</span>
 - [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-19 17:33</span>
 - [Pytorch-Lightning.md](Python/Pytorch-Lightning/) <span style="float: right;">2024-04-19 17:25</span>
-- [Lecture4.md](InternLM2note/Lecture4/) <span style="float: right;">2024-04-18 14:46</span>
 - [docker-cuda.md](Docker/docker-cuda/) <span style="float: right;">2024-04-18 14:34</span>
 - [debug.md](CSMissing/debug/) <span style="float: right;">2024-04-15 20:09</span>
-- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-15 10:43</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-04-12 17:57</span>
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-12 17:36</span>
 - [Lecture3.md](InternLM2note/Lecture3/) <span style="float: right;">2024-04-12 17:33</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-09 22:08</span>
-- [Lecture0.md](InternLM2note/Lecture0/) <span style="float: right;">2024-04-09 19:29</span>
 - [Lecture1.md](InternLM2note/Lecture1/) <span style="float: right;">2024-04-09 15:52</span>
 - [Lecture2.md](InternLM2note/Lecture2/) <span style="float: right;">2024-04-09 15:52</span>
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-09 15:36</span>
