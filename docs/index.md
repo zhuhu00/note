@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-27 16:53</span>
+- [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-27 17:25</span>
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-27 15:33</span>
 - [Pytorch-Lightning.md](python/Pytorch-Lightning/) <span style="float: right;">2024-04-27 14:47</span>
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-04-27 14:47</span>
