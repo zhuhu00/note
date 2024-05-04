@@ -26,3 +26,8 @@ https://github.com/chunhuizhang/diffusion_models_tutorials
 - 【8*】Diffusion-Beat-GANs（2021-5-OpenAI）：[Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/pdf/2105.05233.pdf)
 - 
 
+# DDPM
+
+# DDIM
+
+DDPM 的改进, DDPM 采样步数需要 1000 步, 属于是时间需要太久. 

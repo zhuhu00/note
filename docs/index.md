@@ -4,12 +4,14 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-05-04 16:53</span>
+- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-04 16:53</span>
+- [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-05-04 16:53</span>
+- [Macbook.md](CSMissing/Macbook/) <span style="float: right;">2024-05-04 16:53</span>
 - [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-27 17:25</span>
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-27 15:33</span>
 - [Pytorch-Lightning.md](python/Pytorch-Lightning/) <span style="float: right;">2024-04-27 14:47</span>
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-04-27 14:47</span>
-- [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-04-27 14:47</span>
-- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-04-27 14:47</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-27 14:47</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-04-27 14:47</span>
 - [Lecture6.md](InternLM2note/Lecture6/) <span style="float: right;">2024-04-27 14:47</span>
@@ -27,7 +29,6 @@
 - [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-27 14:47</span>
 - [Writing.md](English/Writing/) <span style="float: right;">2024-04-27 14:47</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-27 14:47</span>
-- [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-04-27 14:47</span>
 - [tmux.md](CSMissing/tmux/) <span style="float: right;">2024-04-27 14:47</span>
 - [debug.md](CSMissing/debug/) <span style="float: right;">2024-04-27 14:47</span>
 - [Huggingface.md](CSMissing/Huggingface/) <span style="float: right;">2024-04-27 14:47</span>

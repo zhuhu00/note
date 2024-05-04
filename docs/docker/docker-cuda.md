@@ -5,6 +5,7 @@
 ## 使用 cuda11.8, ubuntu22.04 为例
 
 - `Dockerfile`如下
+
 ```docker
 # Reference:
 # https://github.com/cvpaperchallenge/Ascender
@@ -50,22 +51,28 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     wget \
     tmux \
     vim \
-    zsh \ 
+    zsh \
     openssh-server \
     unzip \
     && rm -rf /var/lib/apt/lists/*
 
 # conda by root user
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh -O ~/miniconda.sh \ 
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh -O ~/miniconda.sh \
     && /bin/bash ~/miniconda.sh -b -p /opt/conda \
     && rm ~/miniconda.sh \
-    && /opt/conda/bin/conda init bash 
+    && /opt/conda/bin/conda init bash
 ENV PATH /opt/conda/bin:$PATH
 
 
+<<<<<<< HEAD
 # ssh 
 # The RSA key pub need to paste 
 RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.local" >> /root/.ssh/authorized_keys \
+=======
+# ssh
+# The RSA key pub need to paste
+RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.loca" >> /root/.ssh/authorized_keys \
+>>>>>>> 3ff2d27 (update)
 && sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
 
 # change file permission
@@ -82,7 +89,7 @@ RUN printf '#!/bin/bash\n\nservice ssh start\nservice cron start\n\n \ntail -f /
 
 
 # torch 环境，默认 2.0.0, cuda 11.8, python 3.10
-# RUN conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y 
+# RUN conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y
 RUN  pip install ninja ipdb
 
 RUN mkdir -p /run/sshd
@@ -97,7 +104,7 @@ WORKDIR /root/code
   ```yaml
   services:
     ubuntu22:
-      # image: xx  
+      # image: xx
       build:
         context: ../
         dockerfile: docker/Dockerfile
@@ -132,29 +139,26 @@ WORKDIR /root/code
                 capabilities: [gpu]
   ```
 
+之后依次使用:
 
-之后依次使用: 
-
-记得添加 ssh 的秘钥, 方便构建后使用 ssh 连接. 
+记得添加 ssh 的秘钥, 方便构建后使用 ssh 连接.
 
 ```shell
 docker-compose build # 构建镜像
 docker-compose up # 使用该镜像启动一个容器
 
 # 或者使用
-docker-compose up -d # 静默启动该容器, 通过 ssh 连接. 
+docker-compose up -d # 静默启动该容器, 通过 ssh 连接.
 ```
-
 
 ## Docker push 一个镜像
 
 ```sh
-docker ps 
+docker ps
 docker commit id zhuhu/ubuntu22:cu118
-docker push zhuhu/ubuntu22:cu118 
+docker push zhuhu/ubuntu22:cu118
 ```
 
 ## Docker 删除
 
-也是删除使用 id 即可. 
-
+也是删除使用 id 即可.
