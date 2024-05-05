@@ -162,3 +162,28 @@ docker push zhuhu/ubuntu22:cu118
 ## Docker 删除
 
 也是删除使用 id 即可.
+
+# Torch 安装
+
+```shell
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y
+
+```
+
+# Github unsafe
+
+`````shell
+fatal: detected dubious ownership in repository at '/root/code/xx'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory /root/code/xx
+`````
+
+解决办法是: 
+
+```shell
+git config --system --add safe.directory '*'
+# 注意这里是--system, 而不是--global, global 是当前用户下, 而 system 是系统级, 所有用户. 
+```
+
+> 发生的原因是 docker 内是 root 用户, 但是经常需要修改文件所属, 所以可能有了这个问题. 
