@@ -23,7 +23,9 @@ markdown_extensions:
   - tables
   - pymdownx.betterem
   - pymdownx.arithmatex:
-      generic: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.highlight:
     line_spans: __span
   - pymdownx.inlinehilite
