@@ -26,7 +26,7 @@ markdown_extensions:
       generic: true
   - pymdownx.highlight:
       linenums: true
-      line_spans: __span
+      anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.superfences
