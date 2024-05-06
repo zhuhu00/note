@@ -25,7 +25,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
-      linenums: true
+      # linenums: true
+      linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.superfences
