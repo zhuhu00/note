@@ -64,15 +64,9 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x8
 ENV PATH /opt/conda/bin:$PATH
 
 
-<<<<<<< HEAD
-# ssh 
-# The RSA key pub need to paste 
-RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.local" >> /root/.ssh/authorized_keys \
-=======
 # ssh
 # The RSA key pub need to paste
-RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.loca" >> /root/.ssh/authorized_keys \
->>>>>>> 3ff2d27 (update)
+RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.local" >> /root/.ssh/authorized_keys \
 && sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
 
 # change file permission
@@ -217,11 +211,11 @@ To add an exception for this directory, call:
         git config --global --add safe.directory /root/code/xx
 `````
 
-解决办法是: 
+解决办法是:
 
 ```shell
 git config --system --add safe.directory '*'
-# 注意这里是--system, 而不是--global, global 是当前用户下, 而 system 是系统级, 所有用户. 
+# 注意这里是--system, 而不是--global, global 是当前用户下, 而 system 是系统级, 所有用户.
 ```
 
-> 发生的原因是 docker 内是 root 用户, 但是经常需要修改文件所属, 所以可能有了这个问题. 
+> 发生的原因是 docker 内是 root 用户, 但是经常需要修改文件所属, 所以可能有了这个问题.
