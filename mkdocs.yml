@@ -7,7 +7,7 @@ theme:
     primary: cyan
     accent: red
   features:
-    - navigation.instant  
+    - navigation.instant
     - navigation.tracking
     - navigation.top
     - header.autohide
@@ -20,16 +20,17 @@ repo_url: https://github.com/zhuhu00/note
 plugins:
   - search
 markdown_extensions:
-  - tables  
+  - tables
   - pymdownx.betterem
   - pymdownx.arithmatex:
-      generic: true  
-  - pymdownx.highlight
+      generic: true
+  - pymdownx.highlight:
+    line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences  
+  - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - mdx_truly_sane_lists # fix typora 2 space indentation, ref: https://github.com/mkdocs/mkdocs/issues/545
   - def_list
   - pymdownx.tasklist:
@@ -38,4 +39,4 @@ markdown_extensions:
 extra_javascript:
   - _js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js      
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

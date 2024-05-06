@@ -49,7 +49,7 @@ rendering on several established datasets.
 
 **Authors**: Haozhe Xie, Zhaoxi Chen, Fangzhou Hong, Ziwei Liu
 
-<details span>
+<details>
 <summary><b>Abstract</b></summary>
 3D city generation is a desirable yet challenging task, since humans are more sensitive to structural distortions in urban environments. Additionally, generating 3D cities is more complex than 3D natural scenes since buildings, as objects of the same class, exhibit a wider range of appearances compared to the relatively consistent appearance of objects like trees in natural scenes. To address these challenges, we propose CityDreamer, a compositional generative model designed specifically for unbounded 3D cities. Our key insight is that 3D city generation should be a composition of different types of neural fields: 1) various building instances, and 2) background stuff, such as roads and green lands. Specifically, we adopt the bird’s eye view scene representation and employ a volumetric render for both instance-oriented and stuff-oriented neural fields. The generative hash grid and periodic positional embedding are tailored as scene parameterization to suit the distinct characteristics of building instances and background stuff. Furthermore, we contribute a suite of CityGen Datasets, including OSM and GoogleEarth, which comprises a vast amount of real-world city imagery to enhance the realism of the generated 3D cities both in their layouts and appearances. CityDreamer achieves state-of-the-art performance not only in generating realistic 3D cities but also in localized editing within the generated cities
 </details>
@@ -58,21 +58,26 @@ rendering on several established datasets.
 
 <br>
 
+- [BerfScene: Bev-conditioned Equivariant Radiance Fields for Infinite 3D  Scene Generation (CVPR 2024)](https://arxiv.org/pdf/2312.02136.pdf)
+
 # 2023
 
-[3D Scene Diffusion Guidance using Scene Graphs](https://arxiv.org/pdf/2308.04468.pdf)
+- [3D Scene Diffusion Guidance using Scene Graphs (2023)](https://arxiv.org/pdf/2308.04468.pdf) | [![Paper](https://img.shields.io/badge/Paper-orange)](http://arxiv.org/abs/2212.00792) | [![Project](https://img.shields.io/badge/Project-blue)](https://sparsefusion.github.io/) | [![Code](https://img.shields.io/badge/Code-black)](https://github.com/zhizdev/sparsefusion) | [![Video Links](https://img.shields.io/badge/video-red)](https://www.youtube.com/watch?v=dSkw_fWU72k) | ()
 
 https://github.com/zhao-yiqun/RoomDesigner
 
-[![Paper](https://img.shields.io/badge/Paper-orange)](http://arxiv.org/abs/2212.00792) [![Project](https://img.shields.io/badge/Project-blue)](https://sparsefusion.github.io/) [![Code](https://img.shields.io/badge/Code-black)](https://github.com/zhizdev/sparsefusion)[![Video Links](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=dSkw_fWU72k)
+[GRM: Large Gaussian Reconstruction Model for Efficient 3D Reconstruction  and Generation](https://arxiv.org/pdf/2403.14621.pdf)
 
-[![Paper](https://img.shields.io/badge/Paper-orange)](http://arxiv.org/abs/2212.00792) [![Project](https://img.shields.io/badge/Project-blue)](https://sparsefusion.github.io/) [![Code](https://img.shields.io/badge/Code-black)](https://github.com/zhizdev/sparsefusion) [![Video Links](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=dSkw_fWU72k)
+[3D Scene Diffusion Guidance using Scene Graphs (2023)](https://arxiv.org/pdf/2308.04468.pdf)
 
+[Patch-based 3D Natural Scene Generation from a Single Example ( 2023)](https://arxiv.org/pdf/2304.12670.pdf)
 
-<div style="display: flex; justify-content: flex-start; align-items: center;">
-    <a href="http://arxiv.org/abs/2212.00792"><img src="https://img.shields.io/badge/Paper-orange" alt="Paper"></a>
-    <a href="https://sparsefusion.github.io/"><img src="https://img.shields.io/badge/Project-blue" alt="Project"></a>
-    <a href="https://github.com/zhizdev/sparsefusion"><img src="https://img.shields.io/badge/Code-black" alt="Code"></a>
-    <a href="https://www.youtube.com/watch?v=dSkw_fWU72k"><img src="https://img.shields.io/badge/video-blue" alt="Video Links"></a>
-</div>
+[SceneDreamer: Unbounded 3D Scene Generation from 2D Image Collections (IEEE Transactions on Pattern Analysis and Machine Intelligence 2023)](https://arxiv.org/pdf/2302.01330.pdf)
+
+[GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs (CVPR 2024)](https://arxiv.org/pdf/2312.00093.pdf)
+
+https://github.com/cwchenwang/awesome-3d-diffusion
+
+# Datasets
+
 
