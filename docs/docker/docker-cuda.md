@@ -161,13 +161,51 @@ docker push zhuhu/ubuntu22:cu118
 
 ## Docker 删除
 
-也是删除使用 id 即可.
+### 删除没有tag 的镜像
+
+这些命令帮助你找到所有的`<none>`标签的镜像，这通常意味着它们没有被标记或者被临时使用过：
+
+1. **列出所有没有标签的镜像：**
+   ```bash
+   docker images -f "dangling=true"
+   ```
+
+   这个命令会列出所有没有关联任何容器并且没有标签的镜像，也称为“悬挂镜像”。`-f "dangling=true"` 是过滤器的一部分，用来指定只显示悬挂镜像。
+
+2. **删除这些没有标签的镜像：**
+   ```bash
+   docker rmi $(docker images -f "dangling=true" -q)
+   ```
+
+   这里，`docker rmi` 用于删除镜像，`$(docker images -f "dangling=true" -q)` 这部分命令会找出所有悬挂镜像的ID，然后传递给 `docker rmi` 命令来进行删除。
+
+### 删除已经停止的容器
+
+在Docker中查看所有当前未运行的容器，
+
+```shell
+docker ps -a -f "status=exited"
+```
+
+要删除所有已经退出的Docker容器，你可以使用以下命令：
+
+```bash
+docker container prune
+```
+
+这个命令会删除所有停止状态的容器，帮助清理未使用的Docker资源。在执行此命令时，Docker会提示你确认是否继续删除，你需要确认以继续。
+
+或者，如果你想自动确认并删除所有已经退出的容器，可以使用下面的命令：
+
+```bash
+docker rm $(docker ps -a -q -f status=exited)
+```
+
 
 # Torch 安装
 
 ```shell
 conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia -y
-
 ```
 
 # Github unsafe

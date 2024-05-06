@@ -60,3 +60,19 @@ rendering on several established datasets.
 
 # 2023
 
+[3D Scene Diffusion Guidance using Scene Graphs](https://arxiv.org/pdf/2308.04468.pdf)
+
+https://github.com/zhao-yiqun/RoomDesigner
+
+[![Paper](https://img.shields.io/badge/Paper-orange)](http://arxiv.org/abs/2212.00792) [![Project](https://img.shields.io/badge/Project-blue)](https://sparsefusion.github.io/) [![Code](https://img.shields.io/badge/Code-black)](https://github.com/zhizdev/sparsefusion)[![Video Links](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=dSkw_fWU72k)
+
+[![Paper](https://img.shields.io/badge/Paper-orange)](http://arxiv.org/abs/2212.00792) [![Project](https://img.shields.io/badge/Project-blue)](https://sparsefusion.github.io/) [![Code](https://img.shields.io/badge/Code-black)](https://github.com/zhizdev/sparsefusion) [![Video Links](https://img.shields.io/badge/video-blue)](https://www.youtube.com/watch?v=dSkw_fWU72k)
+
+
+<div style="display: flex; justify-content: flex-start; align-items: center;">
+    <a href="http://arxiv.org/abs/2212.00792"><img src="https://img.shields.io/badge/Paper-orange" alt="Paper"></a>
+    <a href="https://sparsefusion.github.io/"><img src="https://img.shields.io/badge/Project-blue" alt="Project"></a>
+    <a href="https://github.com/zhizdev/sparsefusion"><img src="https://img.shields.io/badge/Code-black" alt="Code"></a>
+    <a href="https://www.youtube.com/watch?v=dSkw_fWU72k"><img src="https://img.shields.io/badge/video-blue" alt="Video Links"></a>
+</div>
+
