@@ -4,7 +4,8 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-05 16:29</span>
+- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-06 13:50</span>
+- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-06 13:50</span>
 - [Ubuntu.md](linux/Ubuntu/) <span style="float: right;">2024-05-04 16:53</span>
 - [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-05-04 16:53</span>
 - [Macbook.md](CSMissing/Macbook/) <span style="float: right;">2024-05-04 16:53</span>
@@ -12,7 +13,6 @@
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-27 15:33</span>
 - [Pytorch-Lightning.md](python/Pytorch-Lightning/) <span style="float: right;">2024-04-27 14:47</span>
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-04-27 14:47</span>
-- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-04-27 14:47</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-04-27 14:47</span>
 - [Lecture6.md](InternLM2note/Lecture6/) <span style="float: right;">2024-04-27 14:47</span>
 - [Lecture5.md](InternLM2note/Lecture5/) <span style="float: right;">2024-04-27 14:47</span>
