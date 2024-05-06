@@ -1,7 +1,7 @@
-name: ci 
+name: ci
 on:
   push:
-    branches: 
+    branches:
       - main
 jobs:
   deploy:
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.10
       - run: pip install mkdocs-material mdx_truly_sane_lists
       # - run: python fix_mathblock.py
       # - run: python update_recent.py
