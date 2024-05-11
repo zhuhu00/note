@@ -1,6 +1,6 @@
 #  mkdocs
 
-可以用来做 note 的 archive. 使用的是 markdown, 可以部署在网上. 很方便. 
+可以用来做 note 的 archive. 使用的是 markdown, 可以部署在网上. 很方便.
 
 
 ## install
@@ -13,10 +13,10 @@
 Init a workspace
 
 ```bash
-mkdocs new . 
+mkdocs new .
 ```
 
-Then, add your markdown to `docs`, Folder structure will be preserved in the navigation. 
+Then, add your markdown to `docs`, Folder structure will be preserved in the navigation.
 
 ## Configuration
 
@@ -29,10 +29,10 @@ theme:
   favicon: _assets/icon.png
   name: material
   palette:
-    primary: cyan
+    primary: brown
     accent: red
   features:
-    - navigation.instant  
+    - navigation.instant
     - navigation.tracking
     - navigation.top
     - header.autohide
@@ -45,16 +45,16 @@ repo_url: https://github.com/zhuhu00/note
 plugins:
   - search
 markdown_extensions:
-  - tables  
+  - tables
   - pymdownx.betterem
   - pymdownx.arithmatex:
-      generic: true  
+      generic: true
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.superfences  
+  - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - mdx_truly_sane_lists # fix typora 2 space indentation, ref: https://github.com/mkdocs/mkdocs/issues/545
   - def_list
   - pymdownx.tasklist:
@@ -63,7 +63,7 @@ markdown_extensions:
 extra_javascript:
   - _js/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js      
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 ```
 
 The inline math plugin needs an extra file: `docs/_js/mathjax.js`:
@@ -153,7 +153,7 @@ for file in files:
 At the root workspace:
 
 ```bash
-mkdocs serve	
+mkdocs serve
 ```
 
 Than, you can open your browser: `localhost:8000`
@@ -165,10 +165,10 @@ Using git action to deploy to github pages:
 Create the file at`.github/workflows/ci.yml`:
 
 ```yaml
-name: ci 
+name: ci
 on:
   push:
-    branches: 
+    branches:
       - main
 jobs:
   deploy:
@@ -188,5 +188,4 @@ jobs:
 ## Miscellaneous
 
 - 改变域名, 可以参考 github.io 的域名
-- 其他就是修改颜色等, 可以看看mkdocs 的原版信息. 
-
+- 其他就是修改颜色等, 可以看看mkdocs 的原版信息.

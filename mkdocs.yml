@@ -4,7 +4,7 @@ theme:
   favicon: _assets/icon.png
   name: material
   palette:
-    primary: cyan
+    primary: brown
     accent: red
   features:
     - navigation.instant
