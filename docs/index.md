@@ -4,13 +4,13 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [ssh.md](CSMissing/ssh/) <span style="float: right;">2024-05-11 15:24</span>
+- [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-13 22:14</span>
+- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-11 16:56</span>
+- [ssh.md](CSMissing/ssh/) <span style="float: right;">2024-05-11 15:39</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-05-11 15:24</span>
-- [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-06 17:06</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-06 16:28</span>
 - [Ubuntu.md](CSMissing/Ubuntu/) <span style="float: right;">2024-05-04 16:53</span>
 - [Diffusion_tutorial.md](Deeplearning/Diffusion_tutorial/) <span style="float: right;">2024-05-04 16:53</span>
-- [Macbook.md](CSMissing/Macbook/) <span style="float: right;">2024-05-04 16:53</span>
 - [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-27 17:25</span>
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-27 15:33</span>
 - [Pytorch-Lightning.md](python/Pytorch-Lightning/) <span style="float: right;">2024-04-27 14:47</span>
