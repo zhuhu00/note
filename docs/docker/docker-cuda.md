@@ -2,6 +2,8 @@
 
 构建任意版本的 docker 镜像, 包含 cuda. 需要主机安装 docker, docker-nvidia
 
+- **Nvidia cuda docker镜像:** https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags
+
 ## 使用 cuda11.8, ubuntu22.04 为例
 
 - `Dockerfile`如下
