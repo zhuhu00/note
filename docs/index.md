@@ -4,9 +4,10 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
+- [苹果系列.md](CSMissing/苹果系列/) <span style="float: right;">2024-05-15 23:45</span>
+- [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 23:34</span>
 - [数据集下载.md](Deeplearning/数据集下载/) <span style="float: right;">2024-05-15 16:24</span>
 - [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-15 16:24</span>
-- [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 15:25</span>
 - [Huggingface.md](CSMissing/Huggingface/) <span style="float: right;">2024-05-14 20:45</span>
 - [EIAS-Dockerfile.md](docker/EIAS-Dockerfile/) <span style="float: right;">2024-05-14 20:44</span>
 - [train_strategy.md](Deeplearning/train_strategy/) <span style="float: right;">2024-05-14 20:41</span>
