@@ -1,11 +1,22 @@
+# EIAS 超算
+
+dockerfile 构建镜像实例, 但是还是主要得和老师沟通, 很容易启动不成功
+
+- 暂时测试只有 A800 可用, A100, 3090 均不可
+
+```dockerfile
 # EIAS
+
 # 与非 GPU 版本区别一：
 # 需要使用不同 cuda 版本，从 https://hub.docker.com/ 搜索对应版本，替换下面 FROM 的镜像
+
 # FROM nvidia/cuda:11.8.0-devel-ubuntu22.04 # A800 可用
+
 FROM registry.hub.com:5000/user-images/cuda11.8_lime123
 USER root
 
 # 设置编码
+
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 # 设置时区
@@ -55,13 +66,13 @@ default_channels:\n\
   - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r\n\
   - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2\n\
 custom_channels:\n\
-  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  pytorch-lts: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
-  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    pytorch-lts: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
+    simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud\n\
 " > ~/.condarc
 
 # 配置 pip 北外镜像源
@@ -99,3 +110,4 @@ RUN echo -e "\n\
 export PATH=${PATH}\n\
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}\n\
 " >> /etc/profile
+```

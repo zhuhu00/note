@@ -4,7 +4,9 @@
 
 - **Nvidia cuda docker镜像:** https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags
 
-## 使用 cuda11.8, ubuntu22.04 为例
+## 以root 用户创建(比较推荐, 但是后续会有一些其他问题)
+
+> **使用 cuda11.8, ubuntu22.04 为例**
 
 - `Dockerfile`如下
 
@@ -135,6 +137,137 @@ WORKDIR /root/code
                 capabilities: [gpu]
   ```
 
+## 以普通用户创建(杜绝 root 权限)
+
+> **使用 cuda11.8, ubuntu22.04 为例**, 这里创建的是 `dreamer` 用户, 并且其有 sudo 权限, 无密码, 或者密码是`password`, 
+
+- `Dockerfile`
+
+```dockerfile
+# Reference:
+# https://github.com/cvpaperchallenge/Ascender
+# https://github.com/nerfstudio-project/nerfstudio
+
+FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
+
+ARG USER_NAME=dreamer
+ARG USER_UID=1016
+ARG USER_GID=1016
+ENV COMPOSE_PROJECT_NAME=ubuntu22
+
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+# Set compute capability for nerfacc and tiny-cuda-nn
+# See https://developer.nvidia.com/cuda-gpus and limit number to speed-up build
+ENV TORCH_CUDA_ARCH_LIST="6.0 6.1 7.0 7.5 8.0 8.6 8.9 9.0+PTX"
+ENV TCNN_CUDA_ARCHITECTURES=90;89;86;80;75;70;61;60
+# Speed-up build for RTX 30xx
+# ENV TORCH_CUDA_ARCH_LIST="8.6"
+# ENV TCNN_CUDA_ARCHITECTURES=86
+# Speed-up build for RTX 40xx
+# ENV TORCH_CUDA_ARCH_LIST="8.9"
+# ENV TCNN_CUDA_ARCHITECTURES=89
+
+ENV CUDA_HOME=/usr/local/cuda
+ENV PATH=${CUDA_HOME}/bin:/home/${USER_NAME}/.local/bin:${PATH}
+ENV LD_LIBRARY_PATH=${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
+ENV LIBRARY_PATH=${CUDA_HOME}/lib64/stubs:${LIBRARY_PATH}
+
+# apt install by root user
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    cron \
+    git \
+    libegl1-mesa-dev \
+    libgl1-mesa-dev \
+    libgles2-mesa-dev \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    wget \
+    tmux \
+    vim \
+    zsh \
+    openssh-server \
+    unzip \
+    sudo \
+    && rm -rf /var/lib/apt/lists/*
+
+
+# Create a new user and grant sudo privileges
+RUN groupadd --gid ${USER_GID} ${USER_NAME} \
+    && useradd --uid ${USER_UID} --gid ${USER_GID} -m ${USER_NAME} \
+    && echo "${USER_NAME}:password" | chpasswd \
+    && usermod -aG sudo ${USER_NAME} \
+    && echo "${USER_NAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/${USER_NAME} \
+    && chmod 0440 /etc/sudoers.d/${USER_NAME}
+
+# Change user to non-root user
+USER ${USER_NAME}
+
+# conda by non-root user
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.11.0-2-Linux-x86_64.sh -O ~/miniconda.sh \
+    && /bin/bash ~/miniconda.sh -b -p ~/miniconda \
+    && rm ~/miniconda.sh \
+    && ~/miniconda/bin/conda init bash
+ENV PATH ~/miniconda/bin:$PATH
+
+# ssh
+# The RSA key pub need to paste
+RUN mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCljSK/hqYOYv8Ed9ttRWFcHCESi4azhxOXPYP8O/x+RjnpJcUyrpgYIMxr6BShTeMVN2Wi9nwl7Ur6piJ6WnvHCk/1VSOjo93yd3/YPbiullX80qy00H8WgFdJxiv/P5f3qdflqAEDcI5pF758Sgt3t/c38tfh2mD479a5qOiHD/CJObmpbou89TTTLsGW4fbnREZsENZJGpbYpkTJc2d/x/fFCwVSkbzrZKzXsMQsGh5n5CyKFy7sk501EqBytFiIEU0hxgeZc/J7CdiVhDlqXVV0fdcQXsjuacUIowBZSJx/zMnZsX3f4+BuMkiFUOzqBZZZvEqsQwwKnLlm42qgTqa0mnPEVtydBAyohXTFcIRmIDb4dpH4YRi4a6LO6jAkQEOJFifFcFU/A3DwDpSGiIrCGW4wvqdc334dw87JXPM66JL7UrNi7dMe8TdSh1IDpMoWTm41hHS1ncstKc4sGcNN4JOtJPjzR8sd/ZfSmL7iBI0cdpZNNHboT+qvC1M= hu@Hus-MacBook-Pro.local" >> ~/.ssh/authorized_keys \
+&& sudo sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+
+# change color of bash prompt
+RUN echo "PS1='\[\e[1;35m\]\u@${COMPOSE_PROJECT_NAME}\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\[\e[1;33m\]\$ \[\e[0m\]'" | sudo tee -a /etc/profile && echo "PS1='\[\e[1;35m\]\u@${COMPOSE_PROJECT_NAME}\[\e[0m\]:\[\e[1;34m\]\w\[\e[0m\]\[\e[1;33m\]\$ \[\e[0m\]'" >> ~/.bashrc
+
+RUN printf '#!/bin/bash\n\nsudo service ssh start\n \ntail -f /dev/null\n\n' > ~/.start.sh && chmod +x ~/.start.sh
+
+RUN sudo mkdir -p /run/sshd
+CMD ["~/.start.sh"]
+WORKDIR /home/${USER_NAME}/code
+```
+
+- `compose.yaml`
+
+  ```yaml
+  services:
+    threestudio: # image name
+      build:
+        context: ../
+        dockerfile: docker/Dockerfile
+        args:
+          # you can set environment variables, otherwise default values will be used
+          USER_NAME: ${HOST_USER_NAME:-dreamer}  # export HOST_USER_NAME=$USER
+          UID: ${HOST_UID:-1016}  # export HOST_UID=$(id -u)
+          GID: ${HOST_GID:-1016}  # export HOST_GID=$(id -g)
+        shm_size: '40gb'
+      shm_size: '40gb'
+      environment:
+        NVIDIA_DISABLE_REQUIRE: 1  # avoid wrong `nvidia-container-cli: requirement error`
+      tty: true
+      volumes:
+          - ../:/home/${HOST_USER_NAME:-dreamer}/code
+      ports:
+        - "20022:22" # ssh
+        - "28888:8888" # jupyter
+        - "26006:6006" # tensorboard
+        - "26007:6007" # other viewers
+        - "26008:6008" # other viewers
+        - "26009:6009" # other viewers
+        - "26010:6010" # other viewers
+      deploy:
+        resources:
+          reservations:
+            devices:
+              - driver: nvidia
+                capabilities: [gpu]
+  ```
+
+**接下来的操作都是一样的.**
+
+
 之后依次使用:
 
 记得添加 ssh 的秘钥, 方便构建后使用 ssh 连接.
@@ -145,6 +278,17 @@ docker-compose up # 使用该镜像启动一个容器
 
 # 或者使用
 docker-compose up -d # 静默启动该容器, 通过 ssh 连接.
+
+cd docker/
+docker compose build  # build Docker image
+docker compose up -d  # create and start a container in background
+docker compose exec threestudio bash  # run bash in the container
+
+
+exit  # or Ctrl+D
+docker compose stop  # stop the container
+docker compose start  # start the container
+docker compose down  # stop and remove the container
 ```
 
 ## Docker push 一个镜像

@@ -19,3 +19,4 @@ huggingface 的 CLI 使用: https://huggingface.co/docs/huggingface_hub/main/en/
 ### Objaverse-xl 数据集
 
 大小总计 20T, 没有这么大的硬盘..
+
