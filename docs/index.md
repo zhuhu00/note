@@ -4,7 +4,8 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [苹果系列.md](CSMissing/苹果系列/) <span style="float: right;">2024-05-15 23:45</span>
+- [Mac相关.md](CSMissing/Mac相关/) <span style="float: right;">2024-05-16 16:19</span>
+- [Ubuntu常用命令.md](CSMissing/Ubuntu常用命令/) <span style="float: right;">2024-05-16 13:09</span>
 - [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 23:34</span>
 - [数据集下载.md](Deeplearning/数据集下载/) <span style="float: right;">2024-05-15 16:24</span>
 - [docker-cuda.md](docker/docker-cuda/) <span style="float: right;">2024-05-15 16:24</span>
@@ -16,7 +17,6 @@
 - [ssh.md](CSMissing/ssh/) <span style="float: right;">2024-05-11 15:39</span>
 - [mkdocs.md](Miscellaneous/mkdocs/) <span style="float: right;">2024-05-11 15:24</span>
 - [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-06 16:28</span>
-- [Ubuntu.md](CSMissing/Ubuntu/) <span style="float: right;">2024-05-04 16:53</span>
 - [Lecture7.md](InternLM2note/Lecture7/) <span style="float: right;">2024-04-27 17:25</span>
 - [NeoVim的配置使用.md](CSMissing/NeoVim的配置使用/) <span style="float: right;">2024-04-27 15:33</span>
 - [PyCubes.md](python/PyCubes/) <span style="float: right;">2024-04-27 14:47</span>
