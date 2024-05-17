@@ -1,4 +1,6 @@
-# Mac软件
+# Mac相关
+
+## Mac 好用软件
 
 - **termius**: 终端好工具, 需要自己配置一下主题和字体. 收费, 可以找破解
 - **yoink**: 复制好软件. 
@@ -10,7 +12,7 @@
 - Unzip one: 解压, apple store 可下
 - infuse: 播放器, 能放 HDR
 - Bartender 5: 状态栏管理
-- Tencent lemon
+- Tencent lemon: 轻量级的清理软件, 好用. 
 
 # Mac远程 gui
 
