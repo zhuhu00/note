@@ -10,8 +10,8 @@ A curated list of papers and open-source resources focused on 3D Scene Generatio
 
 <br>
 
-
 ### 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+
 **Authors**: Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, George Drettakis
 
 <details span>
@@ -78,6 +78,7 @@ https://github.com/zhao-yiqun/RoomDesigner
 
 https://github.com/cwchenwang/awesome-3d-diffusion
 
-# Datasets
+Set-the-scene: Global-local training for generating controllable nerf scenes
 
+# Datasets
 
