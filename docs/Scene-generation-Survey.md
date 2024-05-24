@@ -43,7 +43,17 @@ rendering on several established datasets.
 
 # 2024
 
-<br>
+| Paper | Institute (first) | Keywords | Publication | Others |
+| :---: | :---------------: | :------: | :---------: | :----: |
+|[GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided  Generative Gaussian Splatting](https://arxiv.org/pdf/2402.07207v1) |PKU|Scene Generation, layout|ICML 2024| [Project](https://gala3d.github.io/)  [Code](https://github.com/VDIGPKU/GALA3D)|
+|[CityDreamer: Compositional Generative Model of Unbounded 3D Cities](https://arxiv.org/pdf/2309.00610.pdf) |NTU|Compositional Generation|CVPR 2024|[Project](https://haozhexie.com/project/city-dreamer)  [Code](https://github.com/hzxie/CityDreamer) |
+| [Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/pdf/2312.09067.pdf) |UPenn, allenai, Stanford|Scene Generation, Embodied AI|CVPR 2024| [Project](https://yueyang1996.github.io/holodeck/)  [Code](https://github.com/allenai/Holodeck?tab=readme-ov-file)  |
+| [CityGen: Infinite and Controllable 3D City Layout Generation](https://arxiv.org/pdf/2312.01508.pdf) |ZJU|Scene Generation, City generation|arXiv 2312|[Project](https://rese1f.github.io/CityGen/) [Code](https://github.com/rese1f/CityGen) |
+| [CG3D: Compositional Generation for Text-to-3D via Gaussian Splatting](https://arxiv.org/pdf/2311.17907) |UCLA|Compositional Generation, 3DGS|arXiv 2311|[Project](https://asvilesov.github.io/CG3D/) [Code(Soon)](https://asvilesov.github.io/CG3D/) |
+| [[2303.12218] Compositional 3D Scene Generation using Locally Conditioned Diffusion](https://arxiv.org/pdf/2303.12218) |Stanford University|Compositional Generation, VoxNeRF|arXiv 2303|[Project](https://ryanpo.com/comp3d/) [Code(Soon)](https://ryanpo.com/comp3d/) |
+| [GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs](https://arxiv.org/pdf/2312.00093.pdf) |MPI, Tubingen|Compositional Generation, Scene graph|CVPR 2024|[Project](https://graphdreamer.github.io/)  [Code](https://github.com/GGGHSL/GraphDreamer) |
+| [Dreamer XL: Towards High-Resolution Text-to-3D Generation via Trajectory  Score Matching](https://arxiv.org/pdf/2405.11252.pdf) |Durham U|3D Generation|arXiv 2405|[Project]()  [Code](https://github.com/xingy038/Dreamer-XL) |
+| ||||[Project](https://yueyang1996.github.io/holodeck/)  [Code](https://github.com/allenai/Holodeck?tab=readme-ov-file) |
 
 ### CityDreamer: Compositional Generative Model of Unbounded 3D Cities
 
@@ -56,9 +66,10 @@ rendering on several established datasets.
 
   [📄 Paper](https://arxiv.org/pdf/2309.00610v2) | [🌐 Project Page](https://haozhexie.com/project/city-dreamer) | [💻 Code](https://github.com/hzxie/CityDreamer) | [🎥 Short Presentation](https://www.youtube.com/watch?v=te4zinLTYz0)
 
-<br>
 
-- [BerfScene: Bev-conditioned Equivariant Radiance Fields for Infinite 3D  Scene Generation (CVPR 2024)](https://arxiv.org/pdf/2312.02136.pdf)
+- [BerfScene: Bev-conditioned Equivariant Radiance Fields for Infinite 3D  Scene Generation](https://arxiv.org/pdf/2312.02136.pdf) (CVPR 2024)
+- [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided  Generative Gaussian Splatting](https://arxiv.org/pdf/2402.07207v1) | [![Project](https://img.shields.io/badge/Project-blue)](https://gala3d.github.io/) | [![Code](https://img.shields.io/badge/Code-black)](https://github.com/VDIGPKU/GALA3D) | (ICML 2024)
+-
 
 # 2023
 
@@ -81,4 +92,28 @@ https://github.com/cwchenwang/awesome-3d-diffusion
 Set-the-scene: Global-local training for generating controllable nerf scenes
 
 # Datasets
+| Paper | Institute (first) | Keywords | Publication | Others |
+| :---: | :---------------: | :------: | :---------: | :----: |
+|[**Cap3D**: Scalable 3D Captioning with Pretrained Models](https://arxiv.org/pdf/2306.07279.pdf) |UMich|Descriptions of 3D objects by leveraging pretrained models in captioning, alignment, and LLM to consolidate multi-view information, from objaverse.|NeurIPS 2023| [Project](https://cap3d-um.github.io/)  [Code](https://github.com/crockwell/Cap3D) |
+|Text2Shape ||||  |
+|[[2401.09340] SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding](https://arxiv.org/pdf/2401.09340) |BIGAI|Large-scale, multi-purpose dataset of annotated scenes|arXiv 2401| [Project](https://scene-verse.github.io/)  [Code](https://github.com/scene-verse/sceneverse) |
+|[[2312.14074] LiDAR-LLM: Exploring the Potential of Large Language Models for 3D LiDAR Understanding](https://arxiv.org/pdf/2312.14074) |PKU|Captioned version of 420k LiDAR scans from the nuScenes using GPT-4 and 2D MLLMs.|arXiv 2312| [Project](https://sites.google.com/view/lidar-llm)  [NoCode](https://sites.google.com/view/lidar-llm) |
+| ||||  |
+| ||||  |
+| ||||  |
+| ||||  |
+-
 
+# Text-2-3D object generation
+
+| Paper |       Institute (first)       | Keywords   | Publication | Others |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------: | :--------------:  | :---------: | :---------:|
+|Wonder3D |PKU|Scene Generation, layout|ICML 2024| [![Project](https://img.shields.io/badge/Project-blue)](https://gala3d.github.io/)  [![Code](https://img.shields.io/badge/Code-black)](https://github.com/VDIGPKU/GALA3D)|
+|[CityDreamer: Compositional Generative Model of Unbounded 3D Cities](https://arxiv.org/pdf/2309.00610.pdf) |NTU|Compositional Generation|CVPR 2024|[![Project](https://img.shields.io/badge/Project-blue)](https://haozhexie.com/project/city-dreamer)  [![Code](https://img.shields.io/badge/Code-black)](https://github.com/hzxie/CityDreamer) |
+| |||| |
+| |||| |
+| |||| |
+| |||| |
+| |||| |
+| |||| |
+| |||| |
