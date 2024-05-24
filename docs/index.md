@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-20 19:58</span>
+- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-24 15:25</span>
 - [Mac相关.md](CSMissing/Mac相关/) <span style="float: right;">2024-05-16 16:19</span>
 - [Ubuntu常用命令.md](CSMissing/Ubuntu常用命令/) <span style="float: right;">2024-05-16 13:09</span>
 - [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 23:34</span>
