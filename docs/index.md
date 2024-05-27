@@ -4,7 +4,7 @@
 [Hu](https://zhuhu00.top/)'s notebook.
 
 ## Recent Updates
-- [Scene-generation-Survey.md](Scene-generation-Survey/) <span style="float: right;">2024-05-24 15:25</span>
+- [Gaussian.md](Gaussian/) <span style="float: right;">2024-05-27 23:58</span>
 - [Mac相关.md](CSMissing/Mac相关/) <span style="float: right;">2024-05-16 16:19</span>
 - [Ubuntu常用命令.md](CSMissing/Ubuntu常用命令/) <span style="float: right;">2024-05-16 13:09</span>
 - [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 23:34</span>
@@ -32,7 +32,6 @@
 - [20230406-0413 NeRF Application.md](Graphics/games102/20230406-0413 NeRF Application/) <span style="float: right;">2024-04-27 14:47</span>
 - [games101.md](Graphics/games101/) <span style="float: right;">2024-04-27 14:47</span>
 - [L1 Overview.md](Graphics/CMU-16-825-Learning for 3D Vision/L1 Overview/) <span style="float: right;">2024-04-27 14:47</span>
-- [Gaussian.md](Gaussian/) <span style="float: right;">2024-04-27 14:47</span>
 - [Writing.md](English/Writing/) <span style="float: right;">2024-04-27 14:47</span>
 - [Speaking.md](English/Speaking/) <span style="float: right;">2024-04-27 14:47</span>
 - [tmux.md](CSMissing/tmux/) <span style="float: right;">2024-04-27 14:47</span>
