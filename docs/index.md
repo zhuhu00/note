@@ -12,7 +12,7 @@
 - [train_strategy.md](Deeplearning/train_strategy/) <span style="float: right;">2024-06-14 17:30</span>
 - [Lecture0.md](InternLM2note/Lecture0/) <span style="float: right;">2024-06-14 17:24</span>
 - [Mac相关.md](MAC/Mac相关/) <span style="float: right;">2024-06-14 17:23</span>
-- [NeRFStudio.md](Miscellaneous/NeRFStudio/) <span style="float: right;">2024-06-13 20:18</span>
+- [NeRFStudio.md](NeRF&3DGS/NeRFStudio/) <span style="float: right;">2024-06-13 20:18</span>
 - [print.md](python/print/) <span style="float: right;">2024-06-04 15:46</span>
 - [Ubuntu常用命令.md](CSMissing/Ubuntu常用命令/) <span style="float: right;">2024-05-16 13:09</span>
 - [Useful-links.md](CSMissing/Useful-links/) <span style="float: right;">2024-05-15 23:34</span>
