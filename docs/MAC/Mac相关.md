@@ -18,8 +18,8 @@
 
 - 暂时没有找到好的软件, 只有 vnc 了. 
 - xquartz 这个软件适配 m 系列芯片还很拉胯, 等等看吧
-- mac 安装 xquartz 显示 gui 页面: https://blog.csdn.net/weixin_43409012/article/details/129838998
+- mac 安装 xquartz 显示 gui 页面: [https://blog.csdn.net/weixin_43409012/article/details/129838998](https://blog.csdn.net/weixin_43409012/article/details/129838998)
 
 # Mac 上开发
 
-- https://github.com/rerun-io/rerun
+- [https://github.com/rerun-io/rerun](https://github.com/rerun-io/rerun)

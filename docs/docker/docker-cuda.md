@@ -4,7 +4,7 @@
 
 - **Nvidia cuda docker镜像:** https://catalog.ngc.nvidia.com/orgs/nvidia/containers/cuda/tags
 
-## 以root 用户创建(比较推荐, 但是后续会有一些其他问题)
+## 以root 用户创建(比较推荐, 但是后续会有一些权限问题)
 
 > **使用 cuda11.8, ubuntu22.04 为例**
 
