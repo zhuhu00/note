@@ -1,11 +1,16 @@
 # SSH 一些使用
+# ssh生成秘钥
+> 可在 github, huggingface 等使用, 需要加上 email
+```shell
+ssh-keygen -t rsa -b 4096 -C "hu.zhu@connect.polyu.hk"
+```
 
 ## ssh 同步或传输文件
 
 使用方法
 
 ```shell
-# rsync -ar -e "ssh -p 10022" /home/hzhu root@10.10.10.10:/home/hzhu/
+# rsync -avzP --progress -e "ssh -p 23332" ./splatter-images/co3d_teddybear_for_gs hzhu@10.10.10.10:/hzhu/data/dataset/splatter-images
 rsync -av -e "ssh -p 端口号" /home/hzhu hzhu@ip:/home/hzhu/
 ```
 
