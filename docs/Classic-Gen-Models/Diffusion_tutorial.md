@@ -1,5 +1,7 @@
 # Diffusion Model的推导和学习
 
+![20241108215925](https://raw.githubusercontent.com/zhuhu00/img/master/uPic/20241108215925.jpg)
+
 https://github.com/chunhuizhang/diffusion_models_tutorials
 
 如何入坑 Diffusion 方向？ - cameron的回答 - 知乎
@@ -42,3 +44,4 @@ DDPM 的改进, DDPM 采样步数需要 1000 步, 属于是时间需要太久.
 
 # SDE
 
+[Song Yang的博客](https://yang-song.net/blog/2021/score/)

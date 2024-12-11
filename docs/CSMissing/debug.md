@@ -124,17 +124,25 @@ python -m ipdb xxx.py
 
 ```json
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "ssd_train",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/SSC_train.py",
             "console": "integratedTerminal",
+            "justMyCode": false,
             "args": [
-                "image_folder=xxx",
-                "ckpt=xxx"
-            ]
+                "-mode l_gen --vq_size 100 --l_size 32322 --init_size 32 --l_attention True --log_path ./result --vqvae_path ./lst_stage.tar"
+            ],
+            "env": {
+                        "CUDA_VISIBLE_DEVICES": "0",
+                        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "5",
+                    },
         }
     ]
 }
